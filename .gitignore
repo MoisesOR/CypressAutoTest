@@ -39,7 +39,7 @@ testem.log
 Thumbs.db
 
 #Cypress
-/cypress/results/*.*
+/cypress/results
 /cypress/screenshots/*/*.*
 /cypress/videos/*/*.*
 /cypress/results/mochawesome_*.html
