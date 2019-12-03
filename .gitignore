@@ -44,6 +44,3 @@ Thumbs.db
 /cypress/videos/*/*.*
 /cypress/results/mochawesome_*.html
 /cypress/results/mochawesome_*.json
-
-#Others
-/package-lock.json
