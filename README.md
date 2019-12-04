@@ -28,6 +28,10 @@
 
 * Cypress Open: `npx cypress open`
 * Cypress Run: `npx cypress run `
+* Common options:
+  1. `--project "project_name"`
+  2. `--key "cypress.io_key"`
+
 
 ## Common Errors
 
