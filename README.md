@@ -21,8 +21,8 @@
 
 ### 3.  Puppeteer
 
-Install puppeteer for do something extra like take 'Local Storage' or 'Session Storage'...
-Do the function on 'cypress' > 'plugins' > 'index.js' like a task (there are an example)
+> Install puppeteer for do something extra like take 'Local Storage' or 'Session Storage'...
+> Do the function on 'cypress' > 'plugins' > 'index.js' like a task (there are an example)
 * Install [Puppeter](https://github.com/puppeteer/puppeteer): `npm i puppeteer`
 
 ### 4.  Report
