@@ -3,6 +3,7 @@
 * Angular
 * Cypress
 * Mocha
+* Puppeteer
 
 ## Installation
 
@@ -18,7 +19,13 @@
 * Install Ts-loader: `npm install --save-dev ts-loader`
 * Install Cypress Webpack: `npm install --save-dev @cypress/webpack-preprocessor`
 
-### 3.  Report
+### 3.  Puppeteer
+
+Install puppeteer for do something extra like take 'Local Storage' or 'Session Storage'...
+Do the function on 'cypress' > 'plugins' > 'index.js' like a task (there are an example)
+* Install [Puppeter](https://github.com/puppeteer/puppeteer): `npm i puppeteer`
+
+### 4.  Report
 
 * Install Mocha: `npm install --save-dev mocha`
 * Install Mochawesome: `npm install --save-dev mochawesome`

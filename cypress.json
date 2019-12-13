@@ -1,9 +1,9 @@
 {
     "animationDistanceThreshold": 30,
-    "baseUrl": "https://google.com",
+    "baseUrl": "http://automationpractice.com/index.php",
     "blacklistHosts": null,
     "chromeWebSecurity": false,
-    "defaultCommandTimeout": 4000,
+    "defaultCommandTimeout": 5000,
     "env": {},
     "execTimeout": 60000,
     "fileServerFolder": "",

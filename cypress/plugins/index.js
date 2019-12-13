@@ -20,15 +20,68 @@ module.exports = (on) => {
         extensions: [".ts", ".tsx", ".js"]
       },
       module: {
-        rules: [
-          {
-            test: /\.tsx?$/,
-            loader: "ts-loader",
-            options: { transpileOnly: true }
+        rules: [{
+          test: /\.tsx?$/,
+          loader: "ts-loader",
+          options: {
+            transpileOnly: true
           }
-        ]
+        }]
       }
     },
   }
   on('file:preprocessor', wp(options))
+  on("task", { 
+    puppeteerFunction() { // call with cy.task('puppeeterFunction')
+      return (async () => {
+        const browser = await puppeteer.launch({
+          headless: true,
+          slowMo: 250,
+          defaultViewport: null
+        });
+        const page = await browser.newPage();
+        await page.goto('');
+        await page.click('');
+        await page.waitForNavigation({
+          waitUntil: 'networkidle0'
+        });
+        const elements = await page.$x('');
+        await elements[0].click();
+        await page.waitForNavigation({
+          waitUntil: 'networkidle0'
+        });
+
+        const localStorageData = await page.evaluate(() => {
+          let json = {};
+          for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            json[key] = localStorage.getItem(key);
+          }
+          return json;
+        });
+
+        const sessionStorageData = await page.evaluate(() => {
+          let json = {};
+          for (let i = 0; i < sessionStorage.length; i++) {
+            const key = sessionStorage.key(i);
+            json[key] = sessionStorage.getItem(key);
+          }
+          return json;
+        });
+
+        console.log(localStorageData)
+        console.log(sessionStorageData)
+
+        await page.waitFor(5000);
+
+        await page.screenshot({
+          path: 'puppeteerFunction.png'
+        });
+
+        await browser.close();
+
+        return localStorageData
+      })();
+    }
+  });
 }
