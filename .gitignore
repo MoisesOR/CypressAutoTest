@@ -40,7 +40,5 @@ Thumbs.db
 
 #Cypress
 /cypress/results
-/cypress/screenshots/*/*.*
-/cypress/videos/*/*.*
-/cypress/results/mochawesome_*.html
-/cypress/results/mochawesome_*.json
+/cypress/screenshots
+/cypress/videos
