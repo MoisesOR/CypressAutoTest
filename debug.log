@@ -401,3 +401,8 @@
 [1203/114744.867:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffbd510f978 of 48 bytes failed: Solo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
 [1203/114744.867:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffbd51153a0 of 64 bytes failed: Solo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
 [1203/114744.908:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose. (0xc000010a)
+[1219/135131.146:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[1219/135131.147:ERROR:exception_snapshot_win.cc(98)] thread ID 16412 not found in process
+[0109/095351.530:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0109/095351.532:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0109/095351.532:ERROR:exception_snapshot_win.cc(98)] thread ID 11288 not found in process

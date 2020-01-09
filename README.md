@@ -41,5 +41,8 @@
 
 ## Common Errors
 
-*Solution: ["TypeError: Cannot read property 'passes' of undefined"](https://stackoverflow.com/questions/55138378/got-typeerror-cannot-read-property-passes-of-undefined-using-cypress-when-gen)
+* Solution: ["TypeError: Cannot read property 'passes' of undefined"](https://stackoverflow.com/questions/55138378/got-typeerror-cannot-read-property-passes-of-undefined-using-cypress-when-gen)
 Install version 5.2.0 from mocha `npm install mocha@5.2.0.`
+
+## Last implementation (09-01-2020)
+* [Cypress-log-to-output](https://github.com/flotwig/cypress-log-to-output): Now we can see logs in our command and check if some log is showed.

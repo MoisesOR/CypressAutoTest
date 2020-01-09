@@ -12,8 +12,10 @@
 // the project's config changing)
 
 const wp = require('@cypress/webpack-preprocessor')
+const puppeteer = require('puppeteer')
+let isEventError = false
 
-module.exports = (on) => {
+module.exports = (on, config) => {
   const options = {
     webpackOptions: {
       resolve: {
@@ -31,7 +33,7 @@ module.exports = (on) => {
     },
   }
   on('file:preprocessor', wp(options))
-  on("task", { 
+  on("task", {
     puppeteerFunction() { // call with cy.task('puppeeterFunction')
       return (async () => {
         const browser = await puppeteer.launch({
@@ -82,6 +84,19 @@ module.exports = (on) => {
 
         return localStorageData
       })();
+    },
+    getEventError() {
+      return isEventError
+    },
+    resetEventError() {
+      isEventError = false
+      return isEventError
     }
-  });
+  })
+  require('cypress-log-to-output').install(on, (type, event) => {
+    if (event.level === 'error' || event.type === 'error') {
+      isEventError = true
+    }
+    return true
+  })
 }

@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --browser=chrome"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +38,7 @@
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
     "cypress": "^3.7.0",
+    "cypress-log-to-output": "^1.0.7",
     "cypress-xpath": "^1.4.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
