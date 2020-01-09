@@ -33,7 +33,7 @@
 ## Steps
 
 * Cypress Open: `npx cypress open`
-* Cypress Run: `npx cypress run `
+* Cypress Run: `npx cypress run`
 * Common options:
   1. `--project "project_name"`
   2. `--key "cypress.io_key"`
@@ -45,4 +45,4 @@
 Install version 5.2.0 from mocha `npm install mocha@5.2.0.`
 
 ## Last implementation (09-01-2020)
-* [Cypress-log-to-output](https://github.com/flotwig/cypress-log-to-output): Now we can see logs in our command and check if some log is showed.
+* [Cypress-log-to-output](https://github.com/flotwig/cypress-log-to-output): Now we can see logs in our command and check if some log is showed. This code is on `plugins >> index.js`
