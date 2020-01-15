@@ -9,15 +9,15 @@
 
 ### 1. Cypress
 
-* Install [Cypress](https://www.cypress.io): `npm install cypress --save-dev`
+* Install [Cypress](https://www.cypress.io): `npm install cypress `
 * Install [Cypress-xpath](https://github.com/cypress-io/cypress-xpath): `npm install -D cypress-xpath`
 
 ### 2. If you want to use Typescript
 
-* Install Webpack: `npm install --save-dev webpack`
-* Install Typescript: `npm install --save-dev typescript`
-* Install Ts-loader: `npm install --save-dev ts-loader`
-* Install Cypress Webpack: `npm install --save-dev @cypress/webpack-preprocessor`
+* Install Webpack: `npm install webpack`
+* Install Typescript: `npm install typescript`
+* Install Ts-loader: `npm install ts-loader`
+* Install Cypress Webpack: `npm install @cypress/webpack-preprocessor`
 
 ### 3.  Puppeteer
 
