@@ -29,9 +29,9 @@
 
 ### 4.  Report
 
-* Install Mocha: `npm install --save-dev mocha`
-* Install Mochawesome: `npm install --save-dev mochawesome`
-* Install Mochawesome Report Generator: `npm install --save-dev mochawesome-report-generator`
+* Install Mocha: `npm install mocha`
+* Install Mochawesome: `npm install mochawesome`
+* Install Mochawesome Report Generator: `npm install mochawesome-report-generator`
 
 ## Steps
 
