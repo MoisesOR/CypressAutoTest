@@ -19,6 +19,9 @@
 * Install Ts-loader: `npm install ts-loader`
 * Install Cypress Webpack: `npm install @cypress/webpack-preprocessor`
 
+* Explanation:
+  1. https://stackoverflow.com/questions/53650208/cypress-parseerror-import-and-export-may-appear-only-with-sourcetype-modu
+  2. https://stackoverflow.com/questions/53236968/import-project-module-in-cypress
 ### 3.  Puppeteer
 
 > Install puppeteer for do something extra like take 'Local Storage' or 'Session Storage', write the function on 'cypress' > 'plugins' > 'index.js' like a task (there are an example)
