@@ -1,4 +1,4 @@
-# Cypress Auto Test
+# Cypress Auto Test with Angular
 
 * Angular
 * Cypress
