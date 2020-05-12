@@ -51,5 +51,7 @@ Install version 5.2.0 from mocha `npm install mocha@5.2.0.`
 Reinstall cypres with `npx cypress install --force`.
 https://stackoverflow.com/questions/48324493/cypress-failed-to-start
 
-## Last implementation (09-01-2020)
-* [Cypress-log-to-output](https://github.com/flotwig/cypress-log-to-output): Now we can see logs in our command and check if some log is showed. This code is on `plugins >> index.js`
+## Last implementation
+* 09-01-2020 [Cypress-log-to-output](https://github.com/flotwig/cypress-log-to-output): Now we can see logs in our command and check if some log is showed. This code is on `plugins >> index.js (L.173)`
+
+* 12-05-2020 [Node-ews](https://github.com/CumberlandGroup/node-ews/blob/master/lib/ews.js): Now we can take messages just typing user and password. This code is on `plugins >> index.js (L.96)`
