@@ -7,12 +7,19 @@ import { OrderPage } from "../../webpages/orderPage"
 
 describe('Example Auto Test', function () {
     var example: any
+    let emailData: any = null
 
     beforeEach(() => {
         cy.server()
         cy.fixture('ExampleData').as('exData').then(($ex) => {
             example = $ex
         })
+        cy.task('getEmail', { timeout: 10000 })
+            .as('email')
+            .then(e => {
+                emailData = e
+                cy.log("Email String: " + emailData)
+            })
         cy.visit('/')
     })
 
@@ -44,5 +51,9 @@ describe('Example Auto Test', function () {
                 //console.error not shows
                 expect(hasError).to.be.false
             })
+    })
+    
+    it('Email Test', () => {
+        cy.log(emailData)
     })
 })
